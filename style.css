@@ -33,7 +33,8 @@ header {
 }
 
 main {
-  padding: 100px 100px;
+  padding: 10% 10%;
+  /* padding: 100px 100px; */
   /* display: flex; */
   flex-direction: column;
   height: 100%;
@@ -216,6 +217,9 @@ ul {
   list-style: none;
 }
 
+hr.title {
+  border: 1px solid #949494;
+}
 
 img.headshot {
   vertical-align: middle;
