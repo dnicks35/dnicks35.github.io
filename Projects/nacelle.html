@@ -1,91 +1,120 @@
-<!--Created by Derek Nichols on December 21, 2019. Last editied on September 8, 2021. -->
+<!--Created by Derek Nichols on December 21, 2019. Last editied on December 27, 2021. -->
 <!-- Describes what I had done in my graduate research -->
 
-<html>
+<!DOCTYPE html>
+<html lang="en" >
 
 <head>
-	<title>
-		Bioreactor Research Project
-	</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> <!-- import font -->
+	<link href="../style.css" rel="stylesheet"> <!-- import CSS styles -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- import nav bar -->
+	<script src="https://kit.fontawesome.com/a717a2eb17.js" crossorigin="anonymous"></script> <!-- import icons -->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Derek Nichols</title>
+
+	<link rel="shortcut icon" href="Images/Buzz.png">
+
+	<meta name="keywords" content="Derek Nichols, Georgia Tech, Ari Glezer, PhD, Fluid Mechanics, FMRL, Flow Control, Aerospace">
+	<meta name="description" content="ePortfolio for Derek Nichols, PhD Candidate at the Georgia Institute of Technology.">
+	<meta name="author" content="Derek Nichols">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153532135-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-153532135-1');
+	</script>
+
 </head>
 
-<style>
-	body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-	div {
-		padding: 5px 8% 30px 8%;
-		<!-- padding: 5px 75px 30px 75px; -->
-	}
+<body translate="no" bgcolor=#d9d9d9>
+  <div class="page">
 
-	a:active, a:visited, a:link, a:hover {
-		text-decoration: underline;
-		color: black
-	}
+		<!--Navigation bar-->
+			<div id="nav-placeholder">
+			</div>
+			<script>
+			$(function(){
+			  $("#nav-placeholder").load("../nav.html");
+			});
+			</script>
+		<!--end of Navigation bar-->
 
-	img {
-		max-width: 100%;
-		height: auto;
-	}
-</style>
+  <main>
+		<div>
+			&thinsp;
+			<center>
+				<p><font size=+3 color="#003057"><b>Flow Through a Nacelle in a Crosswind</b></font>
+				<hr class="title">
+			</center>
+			<p>&nbsp;
+			<p align="justify">
+			Upon coming to Georgia Tech, I had the opportunity to join the <a href=http://fmrl.gatech.edu/>Fluid Mechanics Research Lab</a> and research under <a href="https://www.me.gatech.edu/faculty/glezer">Professor Ari Glezer</a>. The Boeing Company had funded a new research project to study how crosswinds affect the inflow through an aircraft nacelle and helped to commission a dedicated wind tunnel at Georgia Tech in order to study this interaction. When the project officially started, I was lucky enough to be in a position to take it on as the lead student.
+			<p align="justify">
+			Aircrafts in crosswinds close to the ground are of significant interest as the crosswind speed still holds a meaningful velocity component with respect to the slowly moving aircraft. Because of this, three different flow features can form: a fuselage vortex, a ground vortex, and inlet flow separation on the inner windward side of the nacelle. These features result in substantial distortion through the inlet which leads to asymmetric flow, blade vibrations, and possibly engine stall. It is therefore desired to better understand how this flow behaves and to attempt to minimize these adverse effects using various flow control techniques.
+			<p align="justify">
+			The facility at Georgia Tech consists of two primary components: a model nacelle assembly and a cross flow wind tunnel. The flow through each component is independently varied, and the position and orientation of the nacelle within the tunnel’s test section is variable. The nacelle model is mounted on a flow duct that is driven in suction by a dedicated, computer-controlled blower. Various diagnostic techniques are used to assess the flow through the inlet including a total pressure rake just downstream of the inlet entrance, static pressure ports on the wall near the entrance, mass flow measurements via an averaging pitot probe just upstream of the blower, PIV measurements, and surface oil flow visualization.
+			<p>&nbsp;
+			<p align="center">
+				<table cellpadding=0 cellspacing=5>
+					<tr colspan=2>
+						<td valign="middle">
+							<img src="Nacelle/Images/Tunnel.png" width="600px" align="middle" class="other">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</td>
+						<td valign="middle">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<img src="Nacelle/Images/Tunnel2.jpg" width="450px" align="middle" class="other">
+						</td>
+					</tr>
+				</table>
+			<p>&nbsp;
+			<p align="justify">
+			After fully characterizing the base flow of the model for an array of inlet mass flow rates and crosswind speeds, the next task was to determine what could be done to alleviate the adverse effects that were initiated with the introduction of the crosswind. The first method of flow control that was tried was the use of autonomous bleed to selectively move air from the outside in along the preexisting pressure gradient. By doing so, the air moving along the wall creates a new "virtual surface" so that the main body of incoming air has a better chance of remaining attached. Results which were discussed in my <a href="Nacelle/Characterization and Control of Nacelle Inlet Flow in Crosswind.pdf">AIAA Aviation 2019 Conference Paper</a> have shown that the distortion can be significantly reduced be simply opening selective passages through the inlet for air to move. More work is being done now to test other methods of flow control which have shown promise in preliminary testing.
+			<p align="justify">
+			This research has generated significant interest in the scientific community. In 2019, I was awarded a three year fellowship through the NSF Graduate Research Fellowship Program to continue studying this problem. In addition, I was also awarded one of two Orville and Wilbur Wright Graduate Awards through AIAA in 2019. Both of these awards have greatly helped me in furthering the study of nacelles in crosswinds.
+			<p>&nbsp;
+			<p align="center">
+			<img src="Nacelle/Images/APS_DFD_2019_Nacelle.jpg" width="550px" class="other">
+			<p>&nbsp;
+			<p>
+				<table>
+					<th align="left">
+						Extra Documentation
+					</th>
+					<tr>
+						<td>
+							<a href="Nacelle/Steady and Unsteady Control of Nacelle Inlet Flow in Crosswind.pdf">AIAA SciTech 2021 Conference Paper</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="Nacelle/Fluidic Control of Nacelle Inlet Flow in Crosswind.pdf">AIAA Aviation 2020 Conference Paper</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="Nacelle/Characterization and Control of Nacelle Inlet Flow in Crosswind.pdf">AIAA Aviation 2019 Conference Paper</a>
+						</td>
+					</tr>
+				</table>
+				<p>&nbsp;
+				<p>&nbsp;
+		</div>
+  </main>
 
-<body bgcolor="#cccccc" link="#000000" vlink="#000000">
-<div>
-	<center><h1><font color="#253571"><b>
-		Flow Through a Nacelle in a Crosswind
-	</b></font></h1></center>
-	<hr color=#949494 width="300px" align="center">
-	<p>&nbsp;
-	<p align="justify">
-	Upon coming to Georgia Tech, I had the opportunity to join the <a href=http://fmrl.gatech.edu/ target="_top">Fluid Mechanics Research Lab</a> and research under <a href="https://www.me.gatech.edu/faculty/glezer" target="_top">Professor Ari Glezer</a>. The Boeing Company had funded a new research project to study how crosswinds affect the inflow through an aircraft nacelle and helped to commission a dedicated wind tunnel at Georgia Tech in order to study this interaction. When the project officially started, I was lucky enough to be in a position to take it on as the lead student.
-	<p align="justify">
-	Aircrafts in crosswinds close to the ground are of significant interest as the crosswind speed still holds a meaningful velocity component with respect to the slowly moving aircraft. Because of this, three different flow features can form: a fuselage vortex, a ground vortex, and inlet flow separation on the inner windward side of the nacelle. These features result in substantial distortion through the inlet which leads to asymmetric flow, blade vibrations, and possibly engine stall. It is therefore desired to better understand how this flow behaves and to attempt to minimize these adverse effects using various flow control techniques.
-	<p align="justify">
-	The facility at Georgia Tech consists of two primary components: a model nacelle assembly and a cross flow wind tunnel. The flow through each component is independently varied, and the position and orientation of the nacelle within the tunnel’s test section is variable. The nacelle model is mounted on a flow duct that is driven in suction by a dedicated, computer-controlled blower. Various diagnostic techniques are used to assess the flow through the inlet including a total pressure rake just downstream of the inlet entrance, static pressure ports on the wall near the entrance, mass flow measurements via an averaging pitot probe just upstream of the blower, PIV measurements, and surface oil flow visualization.
-	<p>&nbsp;
-	<p align="center">
-		<table cellpadding=0 cellspacing=5>
-			<tr colspan=2>
-				<td valign="middle">
-					<img src="Nacelle/Images/Tunnel.png" width="600px" align="middle">
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				</td>
-				<td valign="middle">
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<img src="Nacelle/Images/Tunnel2.jpg" width="450px" align="middle">
-				</td>
-			</tr>
-		</table>
-	<p>&nbsp;
-	<p align="justify">
-	After fully characterizing the base flow of the model for an array of inlet mass flow rates and crosswind speeds, the next task was to determine what could be done to alleviate the adverse effects that were initiated with the introduction of the crosswind. The first method of flow control that was tried was the use of autonomous bleed to selectively move air from the outside in along the preexisting pressure gradient. By doing so, the air moving along the wall creates a new "virtual surface" so that the main body of incoming air has a better chance of remaining attached. Results which were discussed in my <a href="Nacelle/Characterization and Control of Nacelle Inlet Flow in Crosswind.pdf" target="main">AIAA Aviation 2019 Conference Paper</a> have shown that the distortion can be significantly reduced be simply opening selective passages through the inlet for air to move. More work is being done now to test other methods of flow control which have shown promise in preliminary testing.
-	<p align="justify">
-	This research has generated significant interest in the scientific community. In 2019, I was awarded a three year fellowship through the NSF Graduate Research Fellowship Program to continue studying this problem. In addition, I was also awarded one of two Orville and Wilbur Wright Graduate Awards through AIAA in 2019. Both of these awards have greatly helped me in furthering the study of nacelles in crosswinds.
-	<p>&nbsp;
-	<p align="center">
-	<img src="Nacelle/Images/APS_DFD_2019_Nacelle.jpg" width="550px">
-	<p>&nbsp;
-	<p>
-		<table>
-			<th align="left">
-				Extra Documentation
-			</th>
-			<tr>
-				<td>
-					<a href="Nacelle/Steady and Unsteady Control of Nacelle Inlet Flow in Crosswind.pdf" target="main">AIAA SciTech 2021 Conference Paper</a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<a href="Nacelle/Fluidic Control of Nacelle Inlet Flow in Crosswind.pdf" target="main">AIAA Aviation 2020 Conference Paper</a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<a href="Nacelle/Characterization and Control of Nacelle Inlet Flow in Crosswind.pdf" target="main">AIAA Aviation 2019 Conference Paper</a>
-				</td>
-			</tr>
-		</table>
 </div>
+
 </body>
 
 </html>

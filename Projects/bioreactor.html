@@ -1,97 +1,126 @@
-<!--Created by Derek Nichols on December 17, 2016. Last editied on September 9, 2021. -->
+<!--Created by Derek Nichols on December 17, 2016. Last editied on December 27, 2021. -->
 <!-- Describes what I had done in my undergrad research -->
 
-<html>
+<!DOCTYPE html>
+<html lang="en" >
 
 <head>
-	<title>
-		Bioreactor Research Project
-	</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> <!-- import font -->
+	<link href="../style.css" rel="stylesheet"> <!-- import CSS styles -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- import nav bar -->
+	<script src="https://kit.fontawesome.com/a717a2eb17.js" crossorigin="anonymous"></script> <!-- import icons -->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Derek Nichols</title>
+
+	<link rel="shortcut icon" href="Images/Buzz.png">
+
+	<meta name="keywords" content="Derek Nichols, Georgia Tech, Ari Glezer, PhD, Fluid Mechanics, FMRL, Flow Control, Aerospace">
+	<meta name="description" content="ePortfolio for Derek Nichols, PhD Candidate at the Georgia Institute of Technology.">
+	<meta name="author" content="Derek Nichols">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153532135-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-153532135-1');
+	</script>
+
 </head>
 
-<style>
-	body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-	div {
-		padding: 5px 8% 30px 8%;
-		<!-- padding: 5px 75px 30px 75px; -->
-	}
+<body translate="no" bgcolor=#d9d9d9>
+  <div class="page">
 
-	a:active, a:visited, a:link, a:hover {
-		text-decoration: underline;
-		color: black
-	}
+		<!--Navigation bar-->
+			<div id="nav-placeholder">
+			</div>
+			<script>
+			$(function(){
+			  $("#nav-placeholder").load("../nav.html");
+			});
+			</script>
+		<!--end of Navigation bar-->
 
-	img {
-		max-width: 100%;
-		height: auto;
-	}
-</style>
+  <main>
+		<div>
+			&thinsp;
+			<center>
+				<p><font size=+3 color="#003057"><b>Osteochondral Bioreactor Research Project</b></font>
+				<hr class="title">
+			</center>
+			<p>&nbsp;
+			<p align="justify">
+				My sophomore year of undergrad at Pitt, I was given the opportunity to work with <a href="https://mox.polimi.it/people-detail/?id=211" target="_top">Professor Paolo Zunino</a> researching microfluidic flow through bioreactors designed to screen drugs used to treat osteoarthritis (OA). My job was to set up the ANSYS Fluid Flow (CFX) simulations to observe the amount of flow through the central chamber which houses the test cells. Prior to working on this research, I had never had exposure to fluid mechanics or ANSYS simulations, so I sat in on Dr. Zunino's Intro to Fluid Mechanics class and spent my free time learning how to set up the simulations. By the end of the semester I was able to represent the model in ANSYS and learned how to interpret the data from the results of the simulation.
+			<p align="justify">
+				The following year, Dr. Zunino moved back to Italy, and my lead research advisor became <a href="https://www.research.chop.edu/people/riccardo-l-gottardi" target="_top">Dr. Riccardo Gottardi</a>. I was instructed to work on a new bioreactor design which granted continuous optical access to the cells compared to the previous model which gave no optical access. My role in the project was to alter the design of the fluid path in order to maximize drug exposure to the cells in the central chamber. A simple example of one of these internal fluid paths can be seen below.
+			<p>&nbsp;
+			<p align="middle">
+				<center><img src="Bioreactor/Images/BioreactorRingNegative.png" width="500px" align="middle" class="other"></center>
+			<p>&nbsp;
+			<p align="justify">
+				The central chamber is filled with GelMA, a hydrogel with relatively low permeability, which leads to a low proportion of fluid flow through the central chamber and to the test cells compared to the surrounding ring. The surrounding ring is a necessary feature that grants any possible air bubbles an exit passage without interacting with the test cells. Because of this design requirement, the question that I needed to address was how this flow path could be altered to enhance fluid flow to the cells and consequently increase their drug exposure. It was apparent that the following features could be changed to alter the fluid flow:
+			<p>&nbsp;
+			<p align="middle">
+				<center><img src="Bioreactor/Images/FeatureCallout.PNG" width="600px" align="middle" class="other"></center>
+			<p>&nbsp;
+			<p align="justify">
+				Multiple simulations were performed to assess how each design alteration affected the flow through the test cells. These simulations lead to relationships expressing how the velocity through the central chamber depends on each design dimension. After these relationships were found, the optimal design was found after considering the design constraints. The constraints necessary to consider were the resolution of the 3D printer, the minimum possible void size, the dimensions of a 96-well plate, and the overall design of the model to prevent features from intersecting. The finalized design is show below.
+			<p>&nbsp;
+			<p align="middle">
+				<center><img src="Bioreactor/Images/BioreactorStepNegative.png" width="500px" align="middle" class="other"></center>
+			<p>&nbsp;
+			<p align="justify">
+				ANSYS testing predicted that this model would achieve nearly 10x the drug exposure through the central chamber compared to the simple ring model, and through experimental validation, this prediction was confirmed. This is because the step model increases the hydraulic resistance of the model. Because the resistance of the surrounding path increases, more fluid wants to move through the central chamber.
+			<p align="justify">
+				My research has been featured in two first-author journal publications in <a href="Bioreactor/BiomedicalMicrodevices.pdf"><i>Biomedical Microdevices</i></a> and <a href="Bioreactor/Ingenium2017.pdf#view=FitW&page=68"><i>Ingenium</i></a>, an undergraduate research publication. In addition to these, it has been the topic of two poster presentations and one conference presentation. In the summer of 2016, I was awarded an SSOE Research Internship to help fund this research. This project taught me countless practical lessons such as hypothesis formulation and testing, data analysis, scientific report writing, and conveying my research to the public. More importantly, this research helped me to discover my love for research and helped me to pave way for my future path to graduate school.
+			<p>&nbsp;
+			<p>
+				<table>
+					<th align="left">
+						Extra Documentation
+					</th>
+					<tr>
+						<td>
+							<a href="Bioreactor/BiomedicalMicrodevices.pdf">Biomedical Microdevices Publication</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="Bioreactor/Ingenium2017.pdf#view=FitW&page=68">Ingenium 2017 Publication</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="Bioreactor/SSOESummerResearchTwoPageAbstract.pdf">SSOE Summer Research Internship Two Page Abstract</a>
+						</td
+					</tr>
+					<tr>
+						<td>
+							<a href="Bioreactor/Science2016Poster.pdf">Science 2016 Poster</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="Bioreactor/IndyPoster.pdf"> Biomedical Engineering Society Annual Meeting Poster</a>
+						</td>
+					</tr>
+				</table>
+				<p>&nbsp;
+				<p>&nbsp;
+		</div>
+  </main>
 
-<body bgcolor="#cccccc" link="#000000" vlink="#000000">
-<div>
-	<center><h1><font color="#253571"><b>
-		Osteochondral Bioreactor Research Project
-	</b></font></h1></center>
-	<hr color=#949494 width="300px" align="center">
-	<p>&nbsp;
-	<p align="justify">
-		My sophomore year of undergrad at Pitt, I was given the opportunity to work with <a href="https://mox.polimi.it/people-detail/?id=211" target="_top">Professor Paolo Zunino</a> researching microfluidic flow through bioreactors designed to screen drugs used to treat osteoarthritis (OA). My job was to set up the ANSYS Fluid Flow (CFX) simulations to observe the amount of flow through the central chamber which houses the test cells. Prior to working on this research, I had never had exposure to fluid mechanics or ANSYS simulations, so I sat in on Dr. Zunino's Intro to Fluid Mechanics class and spent my free time learning how to set up the simulations. By the end of the semester I was able to represent the model in ANSYS and learned how to interpret the data from the results of the simulation.
-	<p align="justify">
-		The following year, Dr. Zunino moved back to Italy, and my lead research advisor became <a href="https://www.research.chop.edu/people/riccardo-l-gottardi" target="_top">Dr. Riccardo Gottardi</a>. I was instructed to work on a new bioreactor design which granted continuous optical access to the cells compared to the previous model which gave no optical access. My role in the project was to alter the design of the fluid path in order to maximize drug exposure to the cells in the central chamber. A simple example of one of these internal fluid paths can be seen below.
-	<p>&nbsp;
-	<p align="middle">
-		<center><img src="Bioreactor/Images/BioreactorRingNegative.png" width="500px" align="middle"></center>
-	<p>&nbsp;
-	<p align="justify">
-		The central chamber is filled with GelMA, a hydrogel with relatively low permeability, which leads to a low proportion of fluid flow through the central chamber and to the test cells compared to the surrounding ring. The surrounding ring is a necessary feature that grants any possible air bubbles an exit passage without interacting with the test cells. Because of this design requirement, the question that I needed to address was how this flow path could be altered to enhance fluid flow to the cells and consequently increase their drug exposure. It was apparent that the following features could be changed to alter the fluid flow:
-	<p>&nbsp;
-	<p align="middle">
-		<center><img src="Bioreactor/Images/FeatureCallout.PNG" width="600px" align="middle"></center>
-	<p>&nbsp;
-	<p align="justify">
-		Multiple simulations were performed to assess how each design alteration affected the flow through the test cells. These simulations lead to relationships expressing how the velocity through the central chamber depends on each design dimension. After these relationships were found, the optimal design was found after considering the design constraints. The constraints necessary to consider were the resolution of the 3D printer, the minimum possible void size, the dimensions of a 96-well plate, and the overall design of the model to prevent features from intersecting. The finalized design is show below.
-	<p>&nbsp;
-	<p align="middle">
-		<center><img src="Bioreactor/Images/BioreactorStepNegative.png" width="500px" align="middle"></center>
-	<p>&nbsp;
-	<p align="justify">
-		ANSYS testing predicted that this model would achieve nearly 10x the drug exposure through the central chamber compared to the simple ring model, and through experimental validation, this prediction was confirmed. This is because the step model increases the hydraulic resistance of the model. Because the resistance of the surrounding path increases, more fluid wants to move through the central chamber.
-	<p align="justify">
-		My research has been featured in two first-author journal publications in <a href="Bioreactor/BiomedicalMicrodevices.pdf" target="main"><i>Biomedical Microdevices</i></a> and <a href="Bioreactor/Ingenium2017.pdf#view=FitW&page=68" target="main"><i>Ingenium</i></a>, an undergraduate research publication. In addition to these, it has been the topic of two poster presentations and one conference presentation. In the summer of 2016, I was awarded an SSOE Research Internship to help fund this research. This project taught me countless practical lessons such as hypothesis formulation and testing, data analysis, scientific report writing, and conveying my research to the public. More importantly, this research helped me to discover my love for research and helped me to pave way for my future path to graduate school.
-	<p>&nbsp;
-	<p>
-		<table>
-			<th align="left">
-				Extra Documentation
-			</th>
-			<tr>
-				<td>
-					<a href="Bioreactor/BiomedicalMicrodevices.pdf" target="main">Biomedical Microdevices Publication</a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<a href="Bioreactor/Ingenium2017.pdf#view=FitW&page=68" target="main">Ingenium 2017 Publication</a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<a href="Bioreactor/SSOESummerResearchTwoPageAbstract.pdf" target="main">SSOE Summer Research Internship Two Page Abstract</a>
-				</td
-			</tr>
-			<tr>
-				<td>
-					<a href="Bioreactor/Science2016Poster.pdf" target="main">Science 2016 Poster</a>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<a href="Bioreactor/IndyPoster.pdf" target="main"> Biomedical Engineering Society Annual Meeting Poster</a>
-				</td>
-			</tr>
-		</table>
 </div>
+
 </body>
 
 </html>
