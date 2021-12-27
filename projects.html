@@ -1,86 +1,76 @@
-﻿<!--Created by Derek Nichols on December 20, 2019. Last editied on January 29, 2020. -->
+﻿<!--Created by Derek Nichols on December 20, 2019. Last editied on December 27, 2021. -->
+<!--These are other projects that I want to include -->
 
-<!--This is other projects that I want to include -->
-
-
-
-<html>
-
-
+<!DOCTYPE html>
+<html lang="en" >
 
 <head>
 
-	<title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> <!-- import font -->
+	<link href="style.css" rel="stylesheet"> <!-- import CSS styles -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- import nav bar -->
+	<script src="https://kit.fontawesome.com/a717a2eb17.js" crossorigin="anonymous"></script> <!-- import icons -->
 
-		Projects
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	</title>
+  <title>Derek Nichols</title>
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="shortcut icon" href="Images/Buzz.png">
 
-	<script src="https://kit.fontawesome.com/a717a2eb17.js" crossorigin="anonymous"></script>
+	<meta name="keywords" content="Derek Nichols, Georgia Tech, Ari Glezer, PhD, Fluid Mechanics, FMRL, Flow Control, Aerospace">
+	<meta name="description" content="ePortfolio for Derek Nichols, PhD Candidate at the Georgia Institute of Technology.">
+	<meta name="author" content="Derek Nichols">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153532135-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-153532135-1');
+	</script>
 
 </head>
 
-		
+<body translate="no" bgcolor=#d9d9d9>
+  <div class="page">
 
-<style>
-	body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+		<!--Navigation bar-->
+			<div id="nav-placeholder">
+			</div>
+			<script>
+			$(function(){
+			  $("#nav-placeholder").load("nav.html");
+			});
+			</script>
+		<!--end of Navigation bar-->
 
+  <main>
+		<div>
+			&thinsp;
+			<p><font size=+3 color="#003057"><b>Projects</b></font>
+			<hr class="title">
+			<p>&nbsp;
+			<p><font size=+2 color="#003057"><a href="Projects/nacelle.html"><b>Nacelle in a Crosswind</b></a></font>
+				<p>PhD research on commercial aircraft nacelles in a crosswind and how to control the adverse effects that are engendered
+			<p>&nbsp;
+			<p><font size=+2 color="#003057"><a href="Projects/bioreactor.html"><b>Bioreactor Research Project</b></a></font>
+				<p>Undergrad research pertaining to flow control in microfluidic bioreactors used to screen drugs to treat osteoarthritis
+			<p>&nbsp;
+			<p><font size=+2 color="#003057"><a href="Projects/seniordesign.html"><b>Foldie - The Laundry Folding Robot</b></a></font>
+				<p>Undergrad senior design project where our team built a laundry folding robot
+			<p>&nbsp;
+			<p>&nbsp;
+		</div>
+  </main>
 
-	a:active, a:visited, a:link, a:hover {
-
-		text-decoration: none;
-
-		color: #253571
-
-	}
-
-
-	div {
-
-		padding: 25px 8% 50px 8%;
-
-		<!-- padding: 25px 100px 50px 100px; -->
-
-	}
-
-
-</style>
-
-
-
-
-<body bgcolor="#cccccc" link="#000000" vlink="#000000">
-
-	<div>
-		<p><font size=+3 color="#253571"><b>Projects</b></font>
-		<hr color=#949494 width="325px" align="left">
-
-
-		<p>&nbsp;
-		<p><font size=+2 color="#253571"><a href="Projects/nacelle.html" target="main"><b>Nacelle in a Crosswind</b></a></font>
-
-			<p>PhD research on commercial aircraft nacelles in a crosswind and how to control the adverse effects that are engendered
-
-
-		<p>&nbsp;
-		<p><font size=+2 color="#253571"><a href="Projects/bioreactor.html" target="main"><b>Bioreactor Research Project</b></a></font>
-			<p>Undergrad research pertaining to flow control in microfluidic bioreactors used to screen drugs to treat osteoarthritis
-
-
-		<p>&nbsp;
-
-
-		<p><font size=+2 color="#253571"><a href="Projects/seniordesign.html" target="main"><b>Foldie - The Laundry Folding Robot</b></a></font>
-
-			<p>Undergrad senior design project where our team built a laundry folding robot
-
-
-	</div>
+</div>
 
 </body>
-
-
 
 </html>

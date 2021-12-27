@@ -1,12 +1,27 @@
-<!--Created by Derek Nichols on November 11, 2013. Last editied on December 13, 2021. -->
+<!-- Created by Derek Nichols on November 11, 2013. Last editied on December 27, 2021. -->
+<!-- This is a brief description about myself and is the landing page for the website -->
 
-<!--	blue = #253571
-	gold = #cfb976
--->
-
-<html>
+<!DOCTYPE html>
+<html lang="en" >
 
 <head>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> <!-- import font -->
+	<link href="style.css" rel="stylesheet"> <!-- import CSS styles -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- import nav bar -->
+	<script src="https://kit.fontawesome.com/a717a2eb17.js" crossorigin="anonymous"></script> <!-- import icons -->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Derek Nichols</title>
+
+	<link rel="shortcut icon" href="Images/Buzz.png">
+
+	<meta name="keywords" content="Derek Nichols, Georgia Tech, Ari Glezer, PhD, Fluid Mechanics, FMRL, Flow Control, Aerospace">
+	<meta name="description" content="ePortfolio for Derek Nichols, PhD Candidate at the Georgia Institute of Technology.">
+	<meta name="author" content="Derek Nichols">
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153532135-1"></script>
 	<script>
@@ -20,22 +35,53 @@
 		gtag('config', 'UA-153532135-1');
 	</script>
 
-	<title>
-		Derek Nichols
-	</title>
-	<link rel="shortcut icon" href="Images/Buzz.png">
-
-	<meta name="keywords" content="Derek Nichols, Georgia Tech, Ari Glezer, PhD, Fluid Mechanics, FMRL, Flow Control, Aerospace">
-	<meta name="description" content="ePortfolio for Derek Nichols, PhD Candidate at the Georgia Institute of Technology.">
-	<meta name="author" content="Derek Nichols">
 </head>
 
+<body translate="no" bgcolor=#d9d9d9>
+  <div class="page">
 
-<frameset border=0 bordercolor="#253571">
-	<frameset cols="120, *">
-		<frame src="menu.html" name="menu" marginheight="0" marginwidth="0" noresize>
-			<frame src="bio.html" name="main" marginheight="25" marginwidth="25" noresize>
-	</frameset>
-</frameset>
+		<!--Navigation bar-->
+			<div id="nav-placeholder">
+			</div>
+			<script>
+			$(function(){
+			  $("#nav-placeholder").load("nav.html");
+			});
+			</script>
+		<!--end of Navigation bar-->
 
-</html>
+			<main>
+				<div>
+					<center>
+					<p>&thinsp;
+					<p><font size="+4">
+						Hi, I'm Derek Nichols</font>
+					</p>
+					<p><font size="+1">
+						Graduate Research Assistant and NSF Graduate Research Fellow
+					</p>
+					<p>&nbsp;<p><img src="Images/Headshot_2.jpg" width="600px" class="headshot">
+					<!-- <p>&nbsp;<p>&nbsp;<p><img src="Images/Headshot_2.jpg" height="780"> -->
+					</center>
+				</div>
+
+				<div id="about">
+					<p>&nbsp;
+		      <p><font size=+3 color="#003057"><b>About Me</b></font>
+					<hr class="title">
+					<font size="+1">
+					<p align="justify">
+					I came to Georgia Tech in 2017 to pursue a PhD in mechanical engineering specializing in experimental fluid mechanics with Professor Ari Glezer. My research focuses on understanding how aircraft nacelles behave in a crosswind and is funded by The Boeing Company and the NSF GRFP. Upon graduation, it is my goal to stay in academia and pursue a faculty position. In preparation, I’m working towards Georgia Tech’s Tech to Teaching Certificate and am also a member of various on-campus groups aimed towards students with similar goals.
+					<p align="justify">
+					Outside of research, I’ve been working on enhancing my coding skills by taking on small coding projects to learn new languages and get better at the ones that I already know. In my free time (when I have any), I train Muay Thai (i.e. kickboxing), enjoy long distance cycling, and hiking around Georgia.
+					</font>
+					<p>&nbsp;
+					<p>&nbsp;
+				</div>
+		  </main>
+
+		</div>
+
+		</body>
+
+		</html>
