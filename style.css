@@ -1,4 +1,4 @@
-/* Created by Derek Nichols on December 26, 2021. Last editied on December 27, 2021. */
+/* Created by Derek Nichols on December 26, 2021. Last editied on January 17, 2022. */
 /* Style sheet to be used on each individual page */
 
 :root {
@@ -174,7 +174,7 @@ main small {
   color: var(--GT_blue);;
 }
 .small a + a {
-  margin-left: 15px;
+  margin-left: 25px;
 }
 
 #nav-container:focus-within #nav-content {
@@ -243,4 +243,8 @@ video.other {
   vertical-align: middle;
   height: auto;
 	max-width:100%;
+}
+
+#contact_link p a:hover {
+  color: var(--GT_gold);
 }
