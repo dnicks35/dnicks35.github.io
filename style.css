@@ -248,3 +248,10 @@ video.other {
 #contact_link p a:hover {
   color: var(--GT_gold);
 }
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: calc(-1 * var(--navBar_height));
+    visibility: hidden;
+}
