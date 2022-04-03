@@ -33,12 +33,24 @@ header {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-main {
-  padding: 100px 10%;
-  /* padding: 100px 100px; */
-  /* display: flex; */
-  flex-direction: column;
-  height: 100%;
+@media (max-width: 799px) {
+  main {
+    padding: 100px 7.5%;
+    /* padding: 100px 100px; */
+    /* display: flex; */
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    padding: 100px 10%;
+    /* padding: 100px 100px; */
+    /* display: flex; */
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 main > div {
