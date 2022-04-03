@@ -1,0 +1,268 @@
+<!--Created by Derek Nichols on January 22, 2022. Last editied on February 26, 2022. -->
+<!-- Generic structure for recipe import -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> <!-- import font -->
+	<link href="../../style.css" rel="stylesheet"> <!-- import CSS styles -->
+  <link href="recipeBook_style.css" rel="stylesheet"> <!-- import CSS styles for recipe book -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- import nav bar -->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Derek Nichols</title>
+
+	<link rel="shortcut icon" href="../../Images/icon.png">
+
+	<meta name="author" content="Derek Nichols">
+
+</head>
+
+
+<body>
+  <div class="page">
+
+	<!--Navigation bar-->
+	<div id="nav-placeholder">
+	</div>
+	<script>
+		$(function() {
+			$("#nav-placeholder").load("../../nav.html");
+		});
+	</script>
+	<!--end of Navigation bar-->
+
+  <main>
+
+    &thinsp;
+    <center>
+    <p class="sectionTitle">Recipe Book</p>
+    <hr class="title">
+    </center>
+
+    <!--Menu bar-->
+    <h3><div align="center" id="contact_link"><p><a href="#breakfast" class="menu">Breakfast</a> &#8226; <a href="#lunch" class="menu">Lunch</a> &#8226; <a href="#appetizers" class="menu">Appetizers</a> &#8226; <a href="#sides" class="menu">Side Dishes</a> &#8226; <a href="#entrees" class="menu">Entrées</a> &#8226; <a href="#desserts" class="menu">Desserts</a></p></div></h3>
+
+    <!--Intro-->
+    <p>&nbsp;</p>
+    <p class="body">
+      For Christmas in 2021, I made my girlfriend, Cindy, a jar filled with over 200 recipe ideas with the idea being we would pull an item, find a recipe online, go to the store for the ingredients, and then cook the meal. I also bought an empty cookbook for us to then record our journey -- to save what we liked and comment on what we would have done differently for next time. As I reworked this website, I quickly realized the opportunity to preserve our journey online and to use it as a way to save recipes and to quickly share them with others. So, if for some reason you've stumbled upon this page, welcome! I hope that you enjoy the recipes we've collected and put our own twist on. If you try any of them out, shoot me an email! I'd love to hear from you.
+    </p>
+    <p class="body">
+      - Derek
+    </p>
+
+    <!--Recent Recipes-->
+    <div>
+      <hr class="section">
+      <a class="anchor" id="recent"></a>
+      <center><p class="subsectionTitle">Recently Added</p></center>
+
+      <div id="recipe_card">
+        <div class="card">
+            <div class="card__body">
+              <a href="Recipes/CaliforniaBurrito/recipe.html" class="cardLink">
+                <img src="Recipes/CaliforniaBurrito/photo.jpg" alt="" class="card__image">
+                <h2 class="card__title">California Burrito</h2>
+                <h4 class="card__date">March 26, 2022</h4>
+                <p class="card__description">Pittsburgh apparently isn't the only place putting french fries on everything</p>
+              </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__body">
+              <a href="Recipes/TwiceBakedPotatoes/recipe.html" class="cardLink">
+                <img src="Recipes/TwiceBakedPotatoes/photo.jpg" alt="" class="card__image">
+                <h2 class="card__title">Twice Baked Potatoes</h2>
+                <h4 class="card__date">March 20, 2022</h4>
+                <p class="card__description">When baking a potato once just isn't enough</p>
+              </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__body">
+              <a href="Recipes/StickyRice/recipe.html" class="cardLink">
+                <img src="Recipes/StickyRice/photo.jpg" alt="" class="card__image">
+                <h2 class="card__title">Thai Mango Sticky Rice</h2>
+                <h4 class="card__date">March 5, 2022</h4>
+                <p class="card__description">Fruit means it's healthy, right?</p>
+              </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__body">
+              <a href="Recipes/PineappleChicken/recipe.html" class="cardLink">
+                <img src="Recipes/PineappleChicken/photo.jpg" alt="" class="card__image">
+                <h2 class="card__title">Pineapple Chicken Stir Fry</h2>
+                <h4 class="card__date">February 26, 2022</h4>
+                <p class="card__description">Stuffing a pineapple with its desecrated innards</p>
+              </a>
+            </div>
+        </div>
+
+      </div>
+      <p>&nbsp;</p>
+    </div>
+
+    <!--Breakfast Recipes-->
+    <div>
+      <hr class="section">
+      <a class="anchor" id="breakfast"></a>
+      <center><p class="subsectionTitle">Breakfast</p></center>
+
+      <div id="recipe_card">
+
+      </div>
+      <p>&nbsp;</p>
+    </div>
+
+    <!--Lunch Recipes-->
+    <div>
+      <hr class="section">
+      <a class="anchor" id="lunch"></a>
+      <center><p class="subsectionTitle">Lunch</p></center>
+
+      <div id="recipe_card">
+
+      </div>
+      <p>&nbsp;</p>
+    </div>
+
+    <!--Appetizer Recipes-->
+    <div>
+      <hr class="section">
+      <a class="anchor" id="appetizers"></a>
+      <center><p class="subsectionTitle">Appetizers</p></center>
+
+      <div id="recipe_card">
+        <div class="card">
+            <div class="card__body">
+              <a href="Recipes/Guacamole/recipe.html" class="cardLink">
+                <img src="Recipes/Guacamole/photo.jpg" alt="" class="card__image">
+                <h2 class="card__title">Guacamole</h2>
+                <h4 class="card__date">March 26, 2022</h4>
+                <p class="card__description">Eating in solace knowing the guac doesn't cost extra</p>
+              </a>
+            </div>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+    </div>
+
+    <!--Side Dish Recipes-->
+    <div>
+      <hr class="section">
+      <a class="anchor" id="sides"></a>
+      <center><p class="subsectionTitle">Side Dishes</p></center>
+
+      <div id="recipe_card">
+        <div class="card">
+            <div class="card__body">
+              <a href="Recipes/BeerBatteredFries/recipe.html" class="cardLink">
+                <img src="Recipes/BeerBatteredFries/photo.jpg" alt="" class="card__image">
+                <h2 class="card__title">Beer-Battered French Fries</h2>
+                <h4 class="card__date">March 26, 2022</h4>
+                <p class="card__description">Got some questioning looks for buying a single can of Miller Lite</p>
+              </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__body">
+              <a href="Recipes/TwiceBakedPotatoes/recipe.html" class="cardLink">
+                <img src="Recipes/TwiceBakedPotatoes/photo.jpg" alt="" class="card__image">
+                <h2 class="card__title">Twice Baked Potatoes</h2>
+                <h4 class="card__date">March 20, 2022</h4>
+                <p class="card__description">When baking a potato once just isn't enough</p>
+              </a>
+            </div>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+    </div>
+
+    <!--Entrée Recipes-->
+    <div>
+      <hr class="section">
+      <a class="anchor" id="entrees"></a>
+      <center><p class="subsectionTitle">Entrées</p></center>
+
+      <div id="recipe_card">
+        <div class="card">
+            <div class="card__body">
+              <a href="Recipes/BeefBourguignon/recipe.html" class="cardLink">
+                <img src="Recipes/BeefBourguignon/photo.jpg" alt="" class="card__image">
+                <h2 class="card__title">Beef Bourguignon</h2>
+                <h4 class="card__date">January 15, 2022</h4>
+                <p class="card__description">Julia Child's famous recipe from "Mastering The Art of French Cooking"</p>
+              </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__body">
+              <a href="Recipes/CaliforniaBurrito/recipe.html" class="cardLink">
+                <img src="Recipes/CaliforniaBurrito/photo.jpg" alt="" class="card__image">
+                <h2 class="card__title">California Burrito</h2>
+                <h4 class="card__date">March 26, 2022</h4>
+                <p class="card__description">Pittsburgh apparently isn't the only place putting french fries on everything</p>
+              </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__body">
+              <a href="Recipes/CrunchwrapSupreme/recipe.html" class="cardLink">
+                <img src="Recipes/CrunchwrapSupreme/photo.jpg" alt="" class="card__image">
+                <h2 class="card__title">Crunchwrap Supreme</h2>
+                <h4 class="card__date">February 5, 2022</h4>
+                <p class="card__description">What would a true recipe book be without some copycat Taco Bell?</p>
+              </a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__body">
+              <a href="Recipes/PineappleChicken/recipe.html" class="cardLink">
+                <img src="Recipes/PineappleChicken/photo.jpg" alt="" class="card__image">
+                <h2 class="card__title">Pineapple Chicken Stir Fry</h2>
+                <h4 class="card__date">February 26, 2022</h4>
+                <p class="card__description">Stuffing a pineapple with its desecrated innards</p>
+              </a>
+            </div>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+    </div>
+
+    <!--Dessert Recipes-->
+    <div>
+      <hr class="section">
+      <a class="anchor" id="desserts"></a>
+      <center><p class="subsectionTitle">Desserts</p></center>
+
+      <div id="recipe_card">
+        <div class="card">
+            <div class="card__body">
+              <a href="Recipes/StickyRice/recipe.html" class="cardLink">
+                <img src="Recipes/StickyRice/photo.jpg" alt="" class="card__image">
+                <h2 class="card__title">Thai Mango Sticky Rice</h2>
+                <h4 class="card__date">March 5, 2022</h4>
+                <p class="card__description">Fruit means it's healthy, right?</p>
+              </a>
+            </div>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+    </div>
+
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+	</main>
+</div>
+</body>
+
+</html>

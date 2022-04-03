@@ -1,0 +1,96 @@
+/* Created by Derek Nichols on February 11, 2022. Last editied on February 11, 2022. */
+/* Additional style sheet to be used on recipe book home page */
+
+@import "../../style.css";
+
+main {
+  padding: 100px 5%;
+}
+
+:root {
+  /* Shadow strength */
+  --clr-gray100: #f0f7f8;
+  --clr-gray200: #cfd8dc;
+  --clr-gray300: #a7b7be;
+  --clr-gray400: #6b7e86;
+  --clr-gray500: #425a65;
+  /* color variables */
+  --boxInitial: #f2f2f2;
+  --boxHover: #455560;
+  --grey: #d9d9d9;
+  --white: #FFFFFF;
+
+  /* border radius */
+  --radius: 0.8rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body #recipe_card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  grid-gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  overflow: hidden;
+  box-shadow: 0px 2px 20px var(--clr-gray200);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: var(--boxInitial);
+}
+.card__image {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+.card__title {
+  padding: 0.5rem;
+}
+.card__date {
+  padding: 0.3rem 1rem;
+}
+.card__description {
+  padding: 0rem 1rem;
+}
+.card__btn {
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid var(--boxHover);
+  background: transparent;
+  color: var(--boxHover);
+  border-radius: var(--radius);
+
+}
+
+/* .card:hover {
+  transform: scale(1.02);
+  position: relative;
+} */
+
+
+
+a.cardLink {
+  color: currentColor;
+  transition: 0s ease-in-out;
+  text-decoration: none;
+}
+
+.card:hover {
+  background: var(--boxHover);
+  color: var(--boxInitial);
+  transition: 0.2s ease-in-out;
+}

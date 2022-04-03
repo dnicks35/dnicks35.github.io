@@ -1,0 +1,112 @@
+/* Created by Derek Nichols on February 11, 2022. Last editied on February 11, 2022. */
+/* Additional style sheet to be used on each recipe page */
+
+
+:root {
+  --heading_blue: #455560;
+	--GT_gold: #B3A369;
+	--GT_grey: #D6DBD4;
+  --grey: #d9d9d9;
+}
+
+#card-container {
+  width: 100%;
+}
+
+@media only screen and (min-width: 700px) {
+  /* For desktop: */
+  #card-container {
+    width: 75%;
+  }
+}
+
+#card-title {
+  font-weight: 700;
+  font-size: 25px;
+  background: var(--heading_blue);
+  padding: 20px 20px;
+  color: #fff;
+  border-radius: 15px 15px 0 0;
+}
+
+#details {
+  background: #fff;
+  padding: 15px 20px 1px;
+}
+
+.detail-value {
+  color: var(--heading_blue);
+}
+
+#card-items {
+  background: #ededed;
+  padding: 15px 20px;
+}
+
+.card-item-title {
+  font-weight: 700;
+}
+
+ul.checkmark li:before {
+    color: #455560;
+    /*content:"\2713\0020";*/  /*checkmark*/
+    content:"\2022\0020";  /*small bullet*/
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.checkmark li {
+  list-style-type: none;
+}
+
+ul.checkmark li {
+  margin-top: 10px;
+  margin-bottom: 3px;
+  padding-left: 1.8em;
+  text-indent: -1.8em;
+}
+
+#directions {
+  background: #fff;
+  padding: 20px;
+}
+
+#directions li {
+  list-style-position: outside;
+  margin-left: 10px;
+  list-style-type: none;
+}
+
+ol {
+  counter-reset: item;
+  margin-left: -40px;
+}
+
+ol > li {
+  counter-increment: item;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  padding-left: 1.8em;
+  text-indent: -1.8em;
+}
+
+ol > li::before {
+  font-weight: bold;
+  content: counter(item) ".";
+  margin-right: 15px;
+
+}
+
+#notes {
+  background: #ededed;
+  padding: 15px 20px 25px;
+  border-radius: 0 0 15px 15px;
+}
+
+hr.recipe {
+  border: 1px solid #000000;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+
+}

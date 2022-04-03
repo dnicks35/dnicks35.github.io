@@ -1,0 +1,96 @@
+<!--Created by Derek Nichols on January 22, 2022. Last editied on February 12, 2022. -->
+<!-- TITLE -->
+
+<!-- Recipe URL -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> <!-- import font -->
+	<link href="../../../../style.css" rel="stylesheet"> <!-- import CSS styles for site -->
+	<link href="../recipe_style.css" rel="stylesheet"> <!-- import CSS styles for recipe -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- import nav bar -->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Derek Nichols</title>
+
+	<link rel="shortcut icon" href="../../../../Images/icon.png">
+
+	<meta name="author" content="Derek Nichols">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153532135-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-153532135-1');
+	</script>
+
+</head>
+
+<body>
+	<div class="page">
+
+		<!--Navigation bar-->
+		<div id="nav-placeholder">
+		</div>
+		<script>
+			$(function() {
+				$("#nav-placeholder").load("../../../../nav.html");
+			});
+		</script>
+		<!--end of Navigation bar-->
+
+		<main>
+			<div id="card-container">
+		  <div id="card-title">TITLE</div>
+	   	<div><img src="photo.jpg" width="100%"></div>
+		  <div id="details">Author: <span class="detail-value">Derek Nichols</span> |
+				                Cooked: <span class="detail-value">Month Date, Year</span> |
+												Modified: <span class="detail-value">Month Date, Year</span>
+				<p>Yields: <span class="detail-value">X Servings</span> |
+					 Prep Time: <span class="detail-value">X Minutes</span> |
+					 Cook Time: <span class="detail-value">X Minutes</span></div>
+		  <div id="card-items">
+		    <span class="card-item-title">Ingredients</span>
+				<hr class="recipe">
+		    <ul class="checkmark">
+		      <li>Ingredient 1</li>
+		    </ul>
+		  </div>
+
+		  <div id="directions">
+		  <span class="card-item-title">Directions</span>
+			<hr class="recipe">
+		    <ol>
+					<li>Step 1</li>
+				</ol>
+		  </div>
+
+			<div id="notes">
+				<span class="card-item-title">Additional Notes</span>
+				<hr class="recipe">
+				<ul class="checkmark">
+					<li></li>
+				</ul>
+			</div>
+		</div>
+
+		<p>&nbsp;</p>
+
+		</main>
+
+	</div>
+
+</body>
+
+</html>
