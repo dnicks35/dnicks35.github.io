@@ -1,4 +1,4 @@
-/* Created by Derek Nichols on December 26, 2021. Last editied on January 17, 2022. */
+/* Created by Derek Nichols on December 26, 2021. Last editied on April 3, 2022. */
 /* Style sheet to be used on each individual page */
 
 :root {
@@ -189,7 +189,11 @@ main small {
 
 html, body {
   height: 100%;
-  background-color: var(--grey)
+  background-color: var(--grey);
+}
+
+html {
+  overflow-y: scroll;
 }
 
 a,
