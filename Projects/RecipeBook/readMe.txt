@@ -1,0 +1,1 @@
+photo_thumbnail.jpg should be scaled to 500px across
