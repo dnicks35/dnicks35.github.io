@@ -1,4 +1,4 @@
-/* Created by Derek Nichols on February 11, 2022. Last editied on April 3, 2022. */
+/* Created by Derek Nichols on February 11, 2022. Last editied on July 3, 2022. */
 /* Additional style sheet to be used on recipe book home page */
 
 @import "../../style.css";
@@ -11,10 +11,12 @@
   --clr-gray400: #6b7e86;
   --clr-gray500: #425a65;
   /* color variables */
-  --boxInitial: #f2f2f2;
-  --boxHover: #455560;
   --grey: #d9d9d9;
   --white: #FFFFFF;
+  --green_dark: #425742;
+
+  --recipeInitial: #f2f2f2;
+  --recipeHover: var(--green_dark);
 
   /* border radius */
   --radius: 0.8rem;
@@ -43,7 +45,7 @@ body #recipe_card {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  background-color: var(--boxInitial);
+  background-color: var(--recipeInitial);
 }
 .card__image {
   height: 12rem;
@@ -65,9 +67,9 @@ body #recipe_card {
   font-weight: bold;
   font-size: 1rem;
   margin: 1rem;
-  border: 2px solid var(--boxHover);
+  border: 2px solid var(--recipeHover);
   background: transparent;
-  color: var(--boxHover);
+  color: var(--recipeHover);
   border-radius: var(--radius);
 
 }
@@ -86,7 +88,7 @@ a.cardLink {
 }
 
 .card:hover {
-  background: var(--boxHover);
-  color: var(--boxInitial);
+  background: var(--recipeHover);
+  color: var(--recipeInitial);
   transition: 0.2s ease-in-out;
 }
