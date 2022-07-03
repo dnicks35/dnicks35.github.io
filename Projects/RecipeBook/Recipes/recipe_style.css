@@ -1,12 +1,26 @@
-/* Created by Derek Nichols on February 11, 2022. Last editied on February 11, 2022. */
+/* Created by Derek Nichols on February 11, 2022. Last editied on July 3, 2022. */
 /* Additional style sheet to be used on each recipe page */
 
 
 :root {
-  --heading_blue: #455560;
-	--GT_gold: #B3A369;
-	--GT_grey: #D6DBD4;
-  --grey: #d9d9d9;
+  --GT_blue: #003057;
+  --GT_gold: #B3A369;
+  --GT_grey: #D6DBD4;
+
+  --grey1: #d9d9d9;
+  --grey2: #eee;
+
+  --green: #797;
+  --green_dark: #425742;
+  --green_light: #d3ded3;
+  /* Light and dark versions cound on https://www.w3schools.com/colors/colors_picker.asp*/
+
+  --blue: #8ac;
+  --blue_dark: #264059;
+  --blue_light: #dbe6f0;
+
+  --color_title: var(--green_dark);
+  --color_secondary: var(--green_light);
 }
 
 #card-container {
@@ -23,7 +37,7 @@
 #card-title {
   font-weight: 700;
   font-size: 25px;
-  background: var(--heading_blue);
+  background: var(--color_title);
   padding: 20px 20px;
   color: #fff;
   border-radius: 15px 15px 0 0;
@@ -35,11 +49,11 @@
 }
 
 .detail-value {
-  color: var(--heading_blue);
+  color: var(--color_title);
 }
 
 #card-items {
-  background: #ededed;
+  background: var(--color_secondary);
   padding: 15px 20px;
 }
 
@@ -99,7 +113,7 @@ ol > li::before {
 }
 
 #notes {
-  background: #ededed;
+  background: var(--color_secondary);
   padding: 15px 20px 25px;
   border-radius: 0 0 15px 15px;
 }
