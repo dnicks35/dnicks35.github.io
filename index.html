@@ -1,4 +1,4 @@
-<!-- Created by Derek Nichols on November 11, 2013. Last editied on July 24, 2022. -->
+<!-- Created by Derek Nichols on November 11, 2013. Last editied on January 29, 2023. -->
 <!-- This is a brief description about myself and is the landing page for the website -->
 
 <!DOCTYPE html>
@@ -29,16 +29,48 @@
 			font-size: 1.12em;
 		}
 
+		/* Change size of title on screen shrink */
 		@media (max-width: 749px) {
 		  main p.header {
 		    font-size: 2.5em;
 		  }
 		}
-
 		@media (min-width: 750px) {
 		  main p.header {
 		    font-size: 3.15em;
 		  }
+		}
+
+		/* Change site layout on mobile */
+		@media (max-width: 649px) {
+			.show-mobile{
+				display: block;
+			}
+			.hide-mobile{
+				display: none;
+			}
+			.show-largeScreen{
+				display: none;
+			}
+		}
+		@media (min-width: 650px) {
+			.show-mobile{
+				display: none;
+			}
+			.hide-mobile{
+				display: block;
+			}
+			.show-largeScreen{
+				display: none;
+			}
+		}
+
+		/* Add additional bottom spacing for larger screens */
+		@media (min-width: 1300px) {
+			.show-largeScreen{
+				display: block;
+			}
+			}
 		}
 	</style>
 
@@ -72,26 +104,57 @@
 
 			<main>
 				<a class="anchor" id="home"></a>
-					<center>
-					<p>&thinsp;</p>
-					<p class="header">Hi, I'm Derek Nichols</p>
-					<p class="subheader">Graduate Research Assistant and NSF Graduate Research Fellow</p>
-					<p>&nbsp;</p>
-					<p><img src="Images/Headshot.jpg" width="600px" class="headshot"></p>
-					</center>
 
-				<a class="anchor" id="about"></a>
+				<div class="show-mobile">
+						<center>
+						<p>&thinsp;</p>
+						<p class="header">Hi, I'm Derek Nichols</p>
+						<p class="subheader">Graduate Research Assistant and NSF Graduate Research Fellow</p>
+						<p>&nbsp;</p>
+						<p><img src="Images/Headshot.jpg" width="400px" class="headshot"></p>
+						</center>
+
+					<a class="anchor" id="about"></a>
+						<p>&nbsp;</p>
+						<p class="sectionTitle">About Me</p>
+						<hr class="title">
+						<p class="body">
+						I came to Georgia Tech in 2017 to pursue a PhD in mechanical engineering specializing in experimental fluid mechanics with Professor Ari Glezer. My research focuses on understanding how aircraft nacelles behave in a crosswind with funding from The Boeing Company, Georgia Tech, and the NSF GRFP. Upon graduation, it is my goal to stay in academia and pursue a faculty position. In preparation, I’ve completed Georgia Tech’s Tech to Teaching Certificate, the CIRTL associate level certificate, received an ASME Graduate Teching Fellowship, and am a member of various on-campus groups aimed towards students with teaching aspirations.
+						</p>
+						<p class="body">
+						Outside of research, I’ve been working on enhancing my coding skills by taking on small coding projects to learn new languages and get better at the ones that I already know. In my free time, I love to <a href="https://www.derek-nichols.com/Projects/RecipeBook/home">cook</a>, train Muay Thai (i.e., kickboxing), enjoy long distance cycling, and hiking around Georgia.
+						</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+				</div>
+
+				<div class="hide-mobile">
+						<center>
+						<p>&thinsp;</p>
+						<p class="header">Hi, I'm Derek Nichols</p>
+						<p class="subheader">Graduate Research Assistant and NSF Graduate Research Fellow</p>
+						</center>
+
+					<a class="anchor" id="about"></a>
+						<p>&nbsp;</p>
+						<p><img src="Images/Headshot.jpg" width="300px" class="headshot" style="float: right; margin: 20px 0 20px 40px;"></p>
+						<!-- <p><img src="Images/Headshot.jpg" width="300px" class="headshot" style="float: left; margin: 0 40px 20px 0;"></p> -->
+						<p class="sectionTitle">About Me</p>
+						<hr class="title">
+						<p class="body">
+						I came to Georgia Tech in 2017 to pursue a PhD in mechanical engineering specializing in experimental fluid mechanics with Professor Ari Glezer. My research focuses on understanding how aircraft nacelles behave in a crosswind with funding from The Boeing Company, Georgia Tech, and the NSF GRFP. Upon graduation, it is my goal to stay in academia and pursue a faculty position. In preparation, I’ve completed Georgia Tech’s Tech to Teaching Certificate, the CIRTL associate level certificate, received an ASME Graduate Teching Fellowship, and am a member of various on-campus groups aimed towards students with teaching aspirations.
+						</p>
+						<p class="body">
+						Outside of research, I’ve been working on enhancing my coding skills by taking on small coding projects to learn new languages and get better at the ones that I already know. In my free time, I love to <a href="https://www.derek-nichols.com/Projects/RecipeBook/home">cook</a>, train Muay Thai (i.e., kickboxing), enjoy long distance cycling, and hiking around Georgia.
+						</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+				</div>
+
+				<div class="show-largeScreen">
 					<p>&nbsp;</p>
-					<p class="sectionTitle">About Me</p>
-					<hr class="title">
-					<p class="body">
-					I came to Georgia Tech in 2017 to pursue a PhD in mechanical engineering specializing in experimental fluid mechanics with Professor Ari Glezer. My research focuses on understanding how aircraft nacelles behave in a crosswind with funding from The Boeing Company, Georgia Tech, and the NSF GRFP. Upon graduation, it is my goal to stay in academia and pursue a faculty position. In preparation, I’ve completed Georgia Tech’s Tech to Teaching Certificate, the CIRTL associate level certificate, received an ASME Graduate Teching Fellowship, and am a member of various on-campus groups aimed towards students with teaching aspirations.
-					</p>
-					<p class="body">
-					Outside of research, I’ve been working on enhancing my coding skills by taking on small coding projects to learn new languages and get better at the ones that I already know. In my free time, I love to <a href="https://www.derek-nichols.com/Projects/RecipeBook/home">cook</a>, train Muay Thai (i.e., kickboxing), enjoy long distance cycling, and hiking around Georgia.
-					</p>
-					<p>&nbsp;</p>
-					<p>&nbsp;</p>
+				</div>
+
 		  </main>
 
 		</div>
