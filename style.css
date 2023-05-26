@@ -1,4 +1,4 @@
-/* Created by Derek Nichols on December 26, 2021. Last editied on July 3, 2022. */
+/* Created by Derek Nichols on December 26, 2021. Last editied on May 26, 2023. */
 /* Style sheet to be used on each individual page */
 
 :root {
@@ -63,6 +63,12 @@ header {
     flex-direction: column;
     height: 100%;
   }
+  .show-mobile {
+    display: block;
+  }
+  .hide-mobile {
+    display: none;
+  }
 }
 
 @media (min-width: 800px) {
@@ -72,6 +78,12 @@ header {
     /* display: flex; */
     flex-direction: column;
     height: 100%;
+  }
+  .show-mobile {
+    display: none;
+  }
+  .hide-mobile {
+    display: block;
   }
 }
 
@@ -133,6 +145,12 @@ main small {
   touch-action: manipulation;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+
+.home {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
 .icon-bar {
   display: block;
   width: 100%;
