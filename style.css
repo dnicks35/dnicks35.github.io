@@ -53,7 +53,7 @@ header {
   justify-content: center;
   align-items: center;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  z-index: 100;
+  z-index: 1;
 }
 
 /* Resize the page on desktop or mobile */
@@ -109,7 +109,7 @@ main small {
   height: 100vh;
   width: 100%;
   pointer-events: none;
-  z-index: 1;
+  z-index: 2;
 }
 #nav-container .bg {
   position: absolute;
@@ -135,7 +135,7 @@ main small {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 101;
+  z-index: 2;
   -webkit-appearance: none;
   border: 0;
   background: transparent;
@@ -160,6 +160,7 @@ main small {
   height: 3px;
   background: white;
   transition: .3s;
+  z-index: 2;
 }
 .icon-bar + .icon-bar {
   margin-top: 5px;
@@ -194,6 +195,7 @@ main small {
   transition: transform .3s;
   will-change: transform;
   contain: paint;
+  z-index: 2;
 }
 
 #nav-content ul {
