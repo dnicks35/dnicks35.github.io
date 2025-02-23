@@ -107,6 +107,7 @@ main small {
   height: 100vh;
   width: 100%;
   pointer-events: none;
+  z-index: 100;
 }
 #nav-container .bg {
   position: absolute;
@@ -118,6 +119,7 @@ main small {
   opacity: 0;
   transition: .3s;
   background: #000;
+  z-index: 100;
 }
 #nav-container:focus-within .bg {
   visibility: visible;
@@ -301,24 +303,15 @@ video.other {
 	max-width:100%;
 }
 
-.videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-}
-
-.videoWrapper iframe {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
 iframe {
   position: relative;
   z-index: 1;
+}
+
+.video-full iframe {
+  aspect-ratio: 16 / 9;
+  height: auto;
+  width: 100%;
 }
 
 @media (max-width: 1599px) {
