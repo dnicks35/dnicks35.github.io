@@ -107,7 +107,7 @@ main small {
   height: 100vh;
   width: 100%;
   pointer-events: none;
-  z-index: 100;
+  z-index: 1;
 }
 #nav-container .bg {
   position: absolute;
@@ -119,7 +119,7 @@ main small {
   opacity: 0;
   transition: .3s;
   background: #000;
-  z-index: 100;
+  z-index: 1;
 }
 #nav-container:focus-within .bg {
   visibility: visible;
@@ -305,7 +305,7 @@ video.other {
 
 iframe {
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 
 .video-full iframe {
