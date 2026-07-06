@@ -1,4 +1,4 @@
-/* Created by Derek Nichols on February 11, 2022. Last editied on July 3, 2022. */
+/* Created by Derek Nichols on February 11, 2022. Last editied on July 6, 2026. */
 /* Additional style sheet to be used on recipe book home page */
 
 @import "../../style.css";
@@ -91,4 +91,48 @@ a.cardLink {
   background: var(--recipeHover);
   color: var(--recipeInitial);
   transition: 0.2s ease-in-out;
+}
+
+
+/* ---------- Search Bar ---------- */
+
+.recipe-search{
+    text-align:center;
+    margin:20px auto 35px auto;
+}
+
+#recipeSearch{
+
+    width:min(500px,90%);
+
+    padding:12px 18px;
+
+    font-size:1rem;
+
+    border:2px solid var(--clr-gray200);
+
+    border-radius:30px;
+
+    outline:none;
+
+    transition:.2s;
+
+}
+
+#recipeSearch:focus{
+
+    border-color:var(--green_dark);
+
+    box-shadow:0 0 8px rgba(66,87,66,.2);
+
+}
+
+#recipeCount{
+
+    margin-top:10px;
+
+    color:var(--clr-gray400);
+
+    font-size:.9rem;
+
 }
