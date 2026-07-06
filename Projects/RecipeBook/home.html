@@ -1,4 +1,4 @@
-<!--Created by Derek Nichols on January 22, 2022. Last editied on April 9, 2025. -->
+<!--Created by Derek Nichols on January 22, 2022. Last editied on July 6, 2026. -->
 <!-- Generic structure for recipe import -->
 
 <!DOCTYPE html>
@@ -60,6 +60,21 @@
     <p class="body">
       - Derek
     </p>
+
+    <p>&nbsp;</p>
+
+    <!-- Search -->
+    <div class="recipe-search">
+        <input
+            type="text"
+            id="recipeSearch"
+            placeholder="🔍 Search recipes..."
+        >
+
+        <p id="recipeCount"></p>
+    </div>
+
+    <p>&nbsp;</p>
 
     <!--Recent Recipes-->
     <div>
@@ -488,6 +503,78 @@
   <p>&nbsp;</p>
 	</main>
 </div>
+
+<script>
+
+const searchBox = document.getElementById("recipeSearch");
+
+const cards = document.querySelectorAll(".card");
+
+const recipeCount = document.getElementById("recipeCount");
+
+const sections = document.querySelectorAll("main > div");
+
+searchBox.addEventListener("input", function(){
+
+    const search = this.value.toLowerCase().trim();
+
+    let visibleCards = 0;
+
+    cards.forEach(card=>{
+
+        const title = card.querySelector(".card__title").textContent.toLowerCase();
+
+        const description = card.querySelector(".card__description").textContent.toLowerCase();
+
+        const link = card.querySelector("a").href.toLowerCase();
+
+        const match =
+            title.includes(search) ||
+            description.includes(search) ||
+            link.includes(search);
+
+        card.style.display = match ? "" : "none";
+
+        if(match) visibleCards++;
+
+    });
+
+    recipeCount.textContent =
+        visibleCards +
+        (visibleCards===1 ? " recipe found" : " recipes found");
+
+    sections.forEach(section=>{
+
+        const cardsInSection = section.querySelectorAll(".card");
+
+        if(cardsInSection.length===0) return;
+
+        let visible = false;
+
+        cardsInSection.forEach(card=>{
+
+            if(card.style.display!="none")
+                visible=true;
+
+        });
+
+        section.style.display = visible ? "" : "none";
+
+    });
+
+    if(search===""){
+
+        recipeCount.textContent =
+            cards.length + " recipes";
+
+    }
+
+});
+
+recipeCount.textContent = cards.length + " recipes";
+
+</script>
+
 </body>
 
 </html>
