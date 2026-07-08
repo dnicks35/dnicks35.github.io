@@ -52,17 +52,6 @@
     <!--Menu bar-->
     <h3><div align="center" id="contact_link"><p><a href="#breakfast" class="menu">Breakfast</a> &#8226; <a href="#appetizers" class="menu">Appetizers</a> &#8226; <a href="#sides" class="menu">Side Dishes</a> &#8226; <a href="#sandwiches" class="menu">Sandwiches</a> &#8226; <a href="#entrees" class="menu">Entrées</a> &#8226; <a href="#desserts" class="menu">Desserts</a></p></div></h3>
 
-    <!--Intro-->
-    <p>&nbsp;</p>
-    <p class="body">
-      For Christmas in 2021, I made my girlfriend (now fiancée!), Cindy, a jar filled with over 200 recipe ideas with the idea being we would pull an item, find a recipe online, go to the store for the ingredients, and then cook the meal. I also bought an empty cookbook for us to then record our journey -- to save what we liked and comment on what we would have done differently for next time. As I reworked this website, I quickly realized the opportunity to preserve our journey online and to use it as a way to save recipes and to quickly share them with others. So, if for some reason you've stumbled upon this page, welcome! I hope that you enjoy the recipes we've collected and put our own twist on. If you try any of them out, shoot me an email! I'd love to hear from you.
-    </p>
-    <p class="body">
-      - Derek
-    </p>
-
-    <p>&nbsp;</p>
-
     <!-- Search -->
     <div class="recipe-search">
         <input
@@ -74,17 +63,28 @@
         <p id="recipeCount"></p>
     </div>
 
-    <p>&nbsp;</p>
+    <div id="intro-section">
+      <!--Intro-->
+      <p>&nbsp;</p>
+      <p class="body">
+        For Christmas in 2021, I made my girlfriend (now wife!), Cindy, a jar filled with over 200 recipe ideas with the idea being we would pull an item, find a recipe online, go to the store for the ingredients, and then cook the meal. I also bought an empty cookbook for us to then record our journey -- to save what we liked and comment on what we would have done differently for next time. As I reworked this website, I quickly realized the opportunity to preserve our journey online and to use it as a way to save recipes and to quickly share them with others. So, if for some reason you've stumbled upon this page, welcome! I hope that you enjoy the recipes we've collected and put our own twist on. If you try any of them out, shoot me an email! I'd love to hear from you.
+      </p>
+      <p class="body">
+        - Derek
+      </p>
+
+      <p>&nbsp;</p>
+    </div>
 
     <!--Recent Recipes-->
-    <div>
+    <div id="recent-section">
       <hr class="section">
       <a class="anchor" id="recent"></a>
       <center><p class="subsectionTitle">Recently Added</p></center>
 
-      <div id="recipe_card">
+      <div class="recipe-grid">
 
-        <div class="card">
+        <div class="card" data-search="oats cinnamon nuts">
             <div class="card__body">
               <a href="Recipes/Granola/recipe.html" class="cardLink">
                 <img src="Recipes/Granola/photo_thumbnail.jpg" alt="" class="card__image">
@@ -94,7 +94,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="">
             <div class="card__body">
               <a href="Recipes/MonkeyBread/recipe.html" class="cardLink">
                 <img src="Recipes/MonkeyBread/photo_thumbnail.jpg" alt="" class="card__image">
@@ -104,7 +104,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="">
             <div class="card__body">
               <a href="Recipes/FilipinoChickenAdobo/recipe.html" class="cardLink">
                 <img src="Recipes/FilipinoChickenAdobo/photo_thumbnail.jpg" alt="" class="card__image">
@@ -114,7 +114,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="">
             <div class="card__body">
               <a href="Recipes/FajitaQuesadilla/recipe.html" class="cardLink">
                 <img src="Recipes/FajitaQuesadilla/photo_thumbnail.jpg" alt="" class="card__image">
@@ -130,14 +130,14 @@
     </div>
 
     <!--Breakfast Recipes-->
-    <div>
+    <div data-search="breakfast brunch morning">
       <hr class="section">
       <a class="anchor" id="breakfast"></a>
       <center><p class="subsectionTitle">Breakfast</p></center>
 
-      <div id="recipe_card">
+      <div class="recipe-grid">
 
-        <div class="card">
+        <div class="card" data-search="bacon sandwich tomato eggs">
             <div class="card__body">
               <a href="Recipes/BreakfastBLT/recipe.html" class="cardLink">
                 <img src="Recipes/BreakfastBLT/photo_thumbnail.jpg" alt="" class="card__image">
@@ -147,7 +147,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+        <div class="card" data-search="oats cinnamon nuts seeds">
             <div class="card__body">
               <a href="Recipes/Granola/recipe.html" class="cardLink">
                 <img src="Recipes/Granola/photo_thumbnail.jpg" alt="" class="card__image">
@@ -157,7 +157,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+        <div class="card" data-search="sweet nuts pecans biscuits pull apart icing">
             <div class="card__body">
               <a href="Recipes/MonkeyBread/recipe.html" class="cardLink">
                 <img src="Recipes/MonkeyBread/photo_thumbnail.jpg" alt="" class="card__image">
@@ -173,13 +173,13 @@
     </div>
 
     <!--Appetizer Recipes-->
-    <div>
+    <div data-search="starters apps">
       <hr class="section">
       <a class="anchor" id="appetizers"></a>
       <center><p class="subsectionTitle">Appetizers</p></center>
 
-      <div id="recipe_card">
-        <div class="card">
+      <div class="recipe-grid">
+         <div class="card" data-search="bbq skewers seafood">
             <div class="card__body">
               <a href="Recipes/BaconShrimp/recipe.html" class="cardLink">
                 <img src="Recipes/BaconShrimp/photo_thumbnail.jpg" alt="" class="card__image">
@@ -189,7 +189,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="dips avocado chips mexican">
             <div class="card__body">
               <a href="Recipes/Guacamole/recipe.html" class="cardLink">
                 <img src="Recipes/Guacamole/photo_thumbnail.jpg" alt="" class="card__image">
@@ -204,13 +204,13 @@
     </div>
 
     <!--Side Dish Recipes-->
-    <div>
+    <div data-search="sides accompaniments">
       <hr class="section">
       <a class="anchor" id="sides"></a>
       <center><p class="subsectionTitle">Side Dishes</p></center>
 
-      <div id="recipe_card">
-        <div class="card">
+      <div class="recipe-grid">
+         <div class="card" data-search="fry potato fried american veggie vegetable vegetarian">
             <div class="card__body">
               <a href="Recipes/BeerBatteredFries/recipe.html" class="cardLink">
                 <img src="Recipes/BeerBatteredFries/photo_thumbnail.jpg" alt="" class="card__image">
@@ -220,7 +220,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="goat cheese veggie vegetable vegetarian">
             <div class="card__body">
               <a href="Recipes/Broccolini/recipe.html" class="cardLink">
                 <img src="Recipes/Broccolini/photo_thumbnail.jpg" alt="" class="card__image">
@@ -230,7 +230,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="veggie vegetable vegetarian">
             <div class="card__body">
               <a href="Recipes/HasslebackPotatoes/recipe.html" class="cardLink">
                 <img src="Recipes/HasslebackPotatoes/photo_thumbnail.jpg" alt="" class="card__image">
@@ -240,7 +240,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="veggie vegetable vegetarian italian italy">
             <div class="card__body">
               <a href="Recipes/Polenta/recipe.html" class="cardLink">
                 <img src="Recipes/Polenta/photo_thumbnail.jpg" alt="" class="card__image">
@@ -250,7 +250,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="bacon">
             <div class="card__body">
               <a href="Recipes/TwiceBakedPotatoes/recipe.html" class="cardLink">
                 <img src="Recipes/TwiceBakedPotatoes/photo_thumbnail.jpg" alt="" class="card__image">
@@ -265,14 +265,14 @@
     </div>
 
     <!--Sandwich Recipes-->
-    <div>
+    <div data-search="">
       <hr class="section">
       <a class="anchor" id="sandwiches"></a>
       <center><p class="subsectionTitle">Sandwiches</p></center>
 
-      <div id="recipe_card">
+      <div class="recipe-grid">
 
-        <div class="card">
+         <div class="card" data-search="chickpeas mediterranean Middle Eastern vegetarian">
             <div class="card__body">
               <a href="Recipes/Falafel/recipe.html" class="cardLink">
                 <img src="Recipes/Falafel/photo_thumbnail.jpg" alt="" class="card__image">
@@ -282,7 +282,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="sub hoagie deli">
             <div class="card__body">
               <a href="Recipes/ItalianGrinder/recipe.html" class="cardLink">
                 <img src="Recipes/ItalianGrinder/photo_thumbnail.jpg" alt="" class="card__image">
@@ -297,13 +297,13 @@
     </div>
 
     <!--Entrée Recipes-->
-    <div>
+    <div data-search="dinner supper mains">
       <hr class="section">
       <a class="anchor" id="entrees"></a>
       <center><p class="subsectionTitle">Entrées</p></center>
 
-      <div id="recipe_card">
-        <div class="card">
+      <div class="recipe-grid">
+         <div class="card" data-search="sausage potatoes pub european english UK united kingdom british">
             <div class="card__body">
               <a href="Recipes/BangersMash/recipe.html" class="cardLink">
                 <img src="Recipes/BangersMash/photo_thumbnail.jpg" alt="" class="card__image">
@@ -313,7 +313,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="stew beef european french julia child">
             <div class="card__body">
               <a href="Recipes/BeefBourguignon/recipe.html" class="cardLink">
                 <img src="Recipes/BeefBourguignon/photo_thumbnail.jpg" alt="" class="card__image">
@@ -323,7 +323,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="pasta ricotta indian italian fusion">
             <div class="card__body">
               <a href="Recipes/ButterChickenLasagna/recipe.html" class="cardLink">
                 <img src="Recipes/ButterChickenLasagna/photo_thumbnail.jpg" alt="" class="card__image">
@@ -333,7 +333,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="steak fries guacamole">
             <div class="card__body">
               <a href="Recipes/CaliforniaBurrito/recipe.html" class="cardLink">
                 <img src="Recipes/CaliforniaBurrito/photo_thumbnail.jpg" alt="" class="card__image">
@@ -343,7 +343,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="steak Argentinian Argentina latin">
             <div class="card__body">
               <a href="Recipes/Chimichurri/recipe.html" class="cardLink">
                 <img src="Recipes/Chimichurri/photo_thumbnail.jpg" alt="" class="card__image">
@@ -353,7 +353,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="taco mexican burrito">
             <div class="card__body">
               <a href="Recipes/CrunchwrapSupreme/recipe.html" class="cardLink">
                 <img src="Recipes/CrunchwrapSupreme/photo_thumbnail.jpg" alt="" class="card__image">
@@ -363,7 +363,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="">
             <div class="card__body">
               <a href="Recipes/DetroitPizza/recipe.html" class="cardLink">
                 <img src="Recipes/DetroitPizza/photo_thumbnail.jpg" alt="" class="card__image">
@@ -373,7 +373,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="chicken mexican latin peppers onions">
             <div class="card__body">
               <a href="Recipes/FajitaQuesadilla/recipe.html" class="cardLink">
                 <img src="Recipes/FajitaQuesadilla/photo_thumbnail.jpg" alt="" class="card__image">
@@ -383,7 +383,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="Philipines asian ">
             <div class="card__body">
               <a href="Recipes/FilipinoChickenAdobo/recipe.html" class="cardLink">
                 <img src="Recipes/FilipinoChickenAdobo/photo_thumbnail.jpg" alt="" class="card__image">
@@ -393,7 +393,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="">
             <div class="card__body">
               <a href="Recipes/KatsuCurry/recipe.html" class="cardLink">
                 <img src="Recipes/KatsuCurry/photo_thumbnail.jpg" alt="" class="card__image">
@@ -403,7 +403,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="">
             <div class="card__body">
               <a href="Recipes/PineappleChicken/recipe.html" class="cardLink">
                 <img src="Recipes/PineappleChicken/photo_thumbnail.jpg" alt="" class="card__image">
@@ -413,7 +413,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="">
             <div class="card__body">
               <a href="Recipes/ShrimpMozambique/recipe.html" class="cardLink">
                 <img src="Recipes/ShrimpMozambique/photo_thumbnail.jpg" alt="" class="card__image">
@@ -423,7 +423,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="">
             <div class="card__body">
               <a href="Recipes/PadThai/recipe.html" class="cardLink">
                 <img src="Recipes/PadThai/photo_thumbnail.jpg" alt="" class="card__image">
@@ -433,7 +433,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="">
             <div class="card__body">
               <a href="Recipes/Tibs/recipe.html" class="cardLink">
                 <img src="Recipes/Tibs/photo_thumbnail.jpg" alt="" class="card__image">
@@ -443,7 +443,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="">
             <div class="card__body">
               <a href="Recipes/Tonkatsu/recipe.html" class="cardLink">
                 <img src="Recipes/Tonkatsu/photo_thumbnail.jpg" alt="" class="card__image">
@@ -458,13 +458,13 @@
     </div>
 
     <!--Dessert Recipes-->
-    <div>
+    <div data-search="sweets">
       <hr class="section">
       <a class="anchor" id="desserts"></a>
       <center><p class="subsectionTitle">Desserts</p></center>
 
-      <div id="recipe_card">
-        <div class="card">
+      <div class="recipe-grid">
+         <div class="card" data-search="">
             <div class="card__body">
               <a href="Recipes/BreadPudding/recipe.html" class="cardLink">
                 <img src="Recipes/BreadPudding/photo_thumbnail.jpg" alt="" class="card__image">
@@ -474,7 +474,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="">
             <div class="card__body">
               <a href="Recipes/StickyRice/recipe.html" class="cardLink">
                 <img src="Recipes/StickyRice/photo_thumbnail.jpg" alt="" class="card__image">
@@ -484,7 +484,7 @@
               </a>
             </div>
         </div>
-        <div class="card">
+         <div class="card" data-search="">
             <div class="card__body">
               <a href="Recipes/VanillaCheesecake/recipe.html" class="cardLink">
                 <img src="Recipes/VanillaCheesecake/photo_thumbnail.jpg" alt="" class="card__image">
@@ -508,11 +508,19 @@
 
 const searchBox = document.getElementById("recipeSearch");
 
-const cards = document.querySelectorAll(".card");
+const cards = Array.from(
+    document.querySelectorAll(".card")
+).filter(card =>
+    !card.closest("#recent-section")
+);
 
 const recipeCount = document.getElementById("recipeCount");
 
 const sections = document.querySelectorAll("main > div");
+
+const introSection = document.getElementById("intro-section");
+
+const recentSection = document.getElementById("recent-section");
 
 searchBox.addEventListener("input", function(){
 
@@ -524,13 +532,13 @@ searchBox.addEventListener("input", function(){
 
         const title = card.querySelector(".card__title").textContent.toLowerCase();
 
-        const description = card.querySelector(".card__description").textContent.toLowerCase();
-
         const link = card.querySelector("a").href.toLowerCase();
+
+        const keywords = (card.dataset.search || "").toLowerCase();
 
         const match =
             title.includes(search) ||
-            description.includes(search) ||
+            keywords.includes(search) ||
             link.includes(search);
 
         card.style.display = match ? "" : "none";
@@ -543,24 +551,72 @@ searchBox.addEventListener("input", function(){
         visibleCards +
         (visibleCards===1 ? " recipe found" : " recipes found");
 
-    sections.forEach(section=>{
+    sections.forEach(section => {
+
+        // Skip intro and recently added
+        if (
+            section.id === "intro-section" ||
+            section.id === "recent-section"
+        ) {
+            return;
+        }
 
         const cardsInSection = section.querySelectorAll(".card");
 
-        if(cardsInSection.length===0) return;
+        if (cardsInSection.length === 0) return;
 
+        // NEW: Check if the search matches the section keywords
+        const sectionKeywords =
+            (section.dataset.search || "").toLowerCase();
+
+
+        const sectionTitle =
+            section.querySelector(".subsectionTitle")
+                ?.textContent
+                .toLowerCase() || "";
+
+        if (
+            search !== "" &&
+            sectionKeywords.includes(search) ||
+            sectionTitle.includes(search)
+        ) {
+
+            // Show every card in this section
+            cardsInSection.forEach(card => {
+                card.style.display = "";
+            });
+
+            section.style.display = "";
+
+            return;
+        }
+
+        // Otherwise, only show the section if at least one card is visible
         let visible = false;
 
-        cardsInSection.forEach(card=>{
+        cardsInSection.forEach(card => {
 
-            if(card.style.display!="none")
-                visible=true;
+            if (card.style.display !== "none") {
+                visible = true;
+            }
 
         });
 
         section.style.display = visible ? "" : "none";
 
     });
+
+    if (search === "") {
+
+    introSection.style.display = "";
+    recentSection.style.display = "";
+
+    } else {
+
+        introSection.style.display = "none";
+        recentSection.style.display = "none";
+
+    }
 
     if(search===""){
 
