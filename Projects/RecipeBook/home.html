@@ -1,4 +1,4 @@
-<!--Created by Derek Nichols on January 22, 2022. Last editied on July 8, 2026. -->
+<!--Created by Derek Nichols on January 22, 2022. Last editied on July 9, 2026. -->
 <!-- Generic structure for recipe import -->
 
 <!DOCTYPE html>
@@ -94,7 +94,7 @@
               </a>
             </div>
         </div>
-         <div class="card" data-search="">
+         <div class="card" data-search="sweet nuts pecans cinnamon biscuits pull apart icing">
             <div class="card__body">
               <a href="Recipes/MonkeyBread/recipe.html" class="cardLink">
                 <img src="Recipes/MonkeyBread/photo_thumbnail.jpg" alt="" class="card__image">
@@ -104,7 +104,7 @@
               </a>
             </div>
         </div>
-         <div class="card" data-search="">
+         <div class="card" data-search="Philipines asian">
             <div class="card__body">
               <a href="Recipes/FilipinoChickenAdobo/recipe.html" class="cardLink">
                 <img src="Recipes/FilipinoChickenAdobo/photo_thumbnail.jpg" alt="" class="card__image">
@@ -114,7 +114,7 @@
               </a>
             </div>
         </div>
-         <div class="card" data-search="">
+         <div class="card" data-search="chicken shrimp mexican latin peppers onions">
             <div class="card__body">
               <a href="Recipes/FajitaQuesadilla/recipe.html" class="cardLink">
                 <img src="Recipes/FajitaQuesadilla/photo_thumbnail.jpg" alt="" class="card__image">
@@ -157,7 +157,7 @@
               </a>
             </div>
         </div>
-        <div class="card" data-search="sweet nuts pecans biscuits pull apart icing">
+        <div class="card" data-search="sweet nuts pecans cinnamon biscuits pull apart icing">
             <div class="card__body">
               <a href="Recipes/MonkeyBread/recipe.html" class="cardLink">
                 <img src="Recipes/MonkeyBread/photo_thumbnail.jpg" alt="" class="card__image">
@@ -484,7 +484,7 @@
               </a>
             </div>
         </div>
-         <div class="card" data-search="cream cheese whipped cream dairy milk">
+         <div class="card" data-search="cream cheese whipped cream dairy milk cake">
             <div class="card__body">
               <a href="Recipes/VanillaCheesecake/recipe.html" class="cardLink">
                 <img src="Recipes/VanillaCheesecake/photo_thumbnail.jpg" alt="" class="card__image">
@@ -503,6 +503,7 @@
   <p>&nbsp;</p>
 	</main>
 </div>
+
 
 <script>
 
@@ -536,9 +537,13 @@ searchBox.addEventListener("input", function(){
 
         const keywords = (card.dataset.search || "").toLowerCase();
 
+        const keywordMatch = keywords
+            .split(/\s+/)
+            .some(word => word.startsWith(search));
+
         const match =
             title.includes(search) ||
-            keywords.includes(search) ||
+            keywordMatch ||
             link.includes(search);
 
         card.style.display = match ? "" : "none";
